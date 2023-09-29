@@ -11,7 +11,7 @@ int calculOfTokenizationForTwoCharacters(char lettres[2]) {
     char first = lettres[0];
     char second = lettres[1];
 
-    return tokenization(first) + (tokenization(second) * 26) + tokenization(second) + 52;
+    return tokenization(first) + (tokenization(first) * 26) + tokenization(second) + 52;
 }
 
 int main() {
